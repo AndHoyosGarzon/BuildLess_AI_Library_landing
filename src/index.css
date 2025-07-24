@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: black;
+}
+
+
+@font-face {
+  font-family: BitcountSingle;
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/fonts/BitcountSingle-Regular.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: BitcountMedium;
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/fonts/BitcountSingle-Medium.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: BitcountBold;
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/fonts/BitcountSingle-Bold.ttf") format("woff2");
+}
+
+
+@theme {
+  /* Variables CSS utilizadas en el proyecto */
+  --header-text: #F2F4F8;
+  --nav-link-hover: #FFFFFF;
+  
+  /* Fuentes */
+  --font-bitcount-regular: 'BitcountSingle',sans-serif;
+  --font-bitcount-medium: 'BitcountMedium',sans-serif;
+  --font-bitcount-bold: 'BitcountBold',sans-serif;
+
+  /*media queries*/
+  --breakpoint-xs: 390px;
+}
