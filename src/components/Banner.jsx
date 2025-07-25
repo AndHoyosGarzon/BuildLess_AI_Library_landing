@@ -12,14 +12,14 @@ const Banner = () => {
           />
           {/*   gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/100 via-transparent to-black/100">
-            <div className="flex flex-col justify-center gap-20 items-center w-full h-full">
-              <h1 className="font-bold xs:text-2xl md:text-3xl lg:text-5xl">
+            <div className="flex flex-col justify-center xs:gap-10 lg:gap-20 items-center w-full h-full">
+              <h1 className="font-bold xs:text-4xl md:text-5xl lg:text-6xl text-center">
                 Build with{" "}
-                <span className="xs:text-2xl  md:text-5xl  lg:text-7xl text-[#f24e3f]">
+                <span className="xs:text-4xl  md:text-6xl  lg:text-7xl text-[#f24e3f]">
                   {"{"} Json{" "}
                 </span>{" "}
                 &
-                <span className="xs:text-2xl md:text-5xl lg:text-7xl ms-3 text-[#f7de1e]/90">
+                <span className="xs:text-4xl md:text-6xl lg:text-7xl ms-3 text-[#f7de1e]/90">
                   JavaScript {"}"}
                 </span>
               </h1>
@@ -30,7 +30,8 @@ const Banner = () => {
               </p>
               <Button
                 text="Learn more"
-                styles="btn xs:btn-sm md:btn-md lg:btn-lg text-white font-semibold px-4 py-2 rounded-md bg-[#f24e3f] hover:bg-[#f24e3f]/70 cursor-pointer transition-all duration-300"
+                styles="btn xs:btn-sm md:btn-md lg:btn-lg text-white font-bitcount-regular
+                 px-4 py-2 rounded-md bg-[#f24e3f]/85 hover:bg-[#f24e3f]/70 cursor-pointer transition-all duration-300"
               />
             </div>
           </div>

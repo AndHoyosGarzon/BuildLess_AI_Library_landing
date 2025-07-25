@@ -4,7 +4,10 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="px-30 mt-20  w-full xs:h-[300px] lg:h-[200px] flex xs:flex-col xs:items-center xs:justify-center xs:gap-4 lg:flex-row lg:justify-between ">
+    <footer className="xs:px-10 xs:pb-5 lg:px-30  lg:pt-5 lg:mt-20 w-full xs:h-auto lg:h-[200px] 
+    flex xs:flex-col xs:items-center xs:justify-center xs:gap-4 lg:flex-row lg:justify-between 
+    border-t-[1px] border-[#f24e3f]/20
+    ">
       {/* first section */}
       <div className="mt-8 flex flex-col xs:gap-4 lg:gap-1 ">
         <div className="flex items-center xs:justify-center lg:justify-start gap-1">
@@ -17,7 +20,7 @@ const Footer = () => {
           Accelerating how software is built
         </p>
         {/* social media */}
-        <div className="cursor-pointer mt-1 flex justify-between items-center gap-2">
+        <div className="cursor-pointer mt-1 flex xs:justify-center xs:gap-5 lg:gap-0 lg:justify-between items-center gap-2">
           <FaGithub
             className="hover:bg-gray-500/80 rounded-sm transition-all duration-300"
             size={25}
@@ -33,9 +36,9 @@ const Footer = () => {
         </div>
       </div>
       {/* second section */}
-      <div className="mt-8   flex flex-col  gap-1">
-        <h3 className="text-md font-bold">Feactures</h3>
-        <ul className="flex flex-col gap-1 text-sm font-bitcount-regular">
+      <div className="mt-8 flex flex-col  gap-1">
+        <h3 className="text-lg font-semibold">Feactures</h3>
+        <ul className="flex flex-col gap-1 items-center xs:text-xs lg:text-sm font-bitcount-regular">
           <li className="hover:text-gray-500 transition-all duration-300">
             <a href="#">Feature 1</a>
           </li>
@@ -48,9 +51,9 @@ const Footer = () => {
         </ul>
       </div>
       {/* third section */}
-      <div className="mt-8   flex flex-col  gap-1">
-        <h3 className="text-md font-bold">Resources</h3>
-        <ul className="flex flex-col gap-1 text-sm font-bitcount-regular">
+      <div className="mt-8 flex flex-col  gap-1">
+        <h3 className="text-lg font-semibold">Resources</h3>
+        <ul className="flex flex-col gap-1 items-center xs:text-xs lg:text-sm font-bitcount-regular">
           <li className="hover:text-gray-500 transition-all duration-300">
             <a href="#">Resource 1</a>
           </li>

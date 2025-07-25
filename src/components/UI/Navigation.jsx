@@ -9,8 +9,9 @@ const Navigation = () => {
 
   return (
     <nav className="navbar justify-between">
-      <div>
-        <a className="cursor-pointer font-bold text-xl">BuildLess</a>
+      <div className="flex items-center">
+        <img src="/icon.svg" alt="logo" className="w-7 h-7" />
+        <a className="cursor-pointer font-bold text-3xl">BuildLess</a>
       </div>
 
       <div className="xs:hidden md:block">
@@ -20,33 +21,45 @@ const Navigation = () => {
               <span>
                 <IoDocumentAttach size={15} />
               </span>
-              <p className="text-sm ">Docs</p>
+              <p className="text-sm font-bitcount-medium ">Docs</p>
             </button>
           </li>
           <li>
-            <button className="bg-[#f24e3f]/75 hover:bg-[#f24e3f]/25 rounded-md  flex justify-between items-center gap-2 p-2">
+            <button className="bg-[#f24e3f]/65 hover:bg-[#f24e3f]/25 rounded-md  flex justify-between items-center gap-2 p-2">
               <span>
                 <FaGoogle size={15} />
               </span>
-              <p className="text-sm ">Log in with Google</p>
+              <p className="text-sm font-bitcount-medium ">Log in with Google</p>
             </button>
           </li>
         </ul>
       </div>
 
       <div className="md:hidden text-2xl cursor-pointer dropdown dropdown-start">
-        {isOpen ? <IoClose onClick={() => setIsOpen(!isOpen)} /> : <IoMenu onClick={() => setIsOpen(!isOpen)} />}
+        {isOpen ? (
+          <IoClose onClick={() => setIsOpen(!isOpen)} />
+        ) : (
+          <IoMenu onClick={() => setIsOpen(!isOpen)} />
+        )}
       </div>
 
       {isOpen && (
-        <div className="absolute top-16 right-0 dropdown-content menu bg-base-100 border-b-[0.2px] 
-        border-[#f24e3f]/10 rounded-box z-1 w-full p-2 shadow-lg">
-          <div className="flex flex-col items-end gap-2 ">
-            <li className="me-3 text-sm">
-              <a>Item 1</a>
+        <div
+          className="absolute top-16 right-0 dropdown-content md:hidden menu bg-base-100 border-b-[0.2px] 
+        border-[#f24e3f]/10 rounded-box z-1 w-full p-2 shadow-lg"
+        >
+          <div className="flex flex-col items-center gap-2 ">
+            <li className="text-sm font-bitcount-medium">
+              <a className="text-md rounded-xl ">
+                <IoDocumentAttach />
+                Docs
+              </a>
             </li>
-            <li className="me-3">
-              <a>Item 2</a>
+            <li className="me-3 font-bitcount-medium">
+              <a className="text-md rounded-xl bg-[#f24e3f]/65 hover:bg-[#f24e3f]/25">
+                <FaGoogle />
+                Log in with Google
+              </a>
             </li>
           </div>
         </div>
