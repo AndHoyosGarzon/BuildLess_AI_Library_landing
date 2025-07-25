@@ -6,7 +6,7 @@ import { FaCodePullRequest } from "react-icons/fa6";
 
 const MainContent = () => {
   return (
-    <main className="w-full h-full px-30 mt-12 flex flex-col justify-between gap-30 ">
+    <main className="w-full h-full xs:px-10 lg:px-30 mt-12 flex flex-col justify-between gap-30 ">
       <div className="w-full h-auto  flex xs:flex-col lg:flex-row  justify-between gap-10  items-center ">
         <div className="xs:w-full xs:h-auto  lg:w-[50%] lg:h-[400px] border-1 border-gray-500/50 rounded-md xs:overflow-y-hidden lg:overflow-y-scroll ">
           <img
@@ -58,17 +58,17 @@ const MainContent = () => {
       </div>
 
       {/* third section */}
-      <div className="carousel w-full h-[400px]  rounded-lg bg-yellow-500/10">
+      <div className="carousel w-full h-[400px]  rounded-lg">
         {/* slide 1 */}
         <div id="slide1" className="carousel-item relative w-full">
           <div className="w-full h-full flex justify-center items-center">
             <div
               className="
             flex flex-col justify-center items-center
-            text-white text-2xl font-bitcount-regular w-full rounded-lg h-[350px]
+            text-white text-2xl font-bitcount-regular xs:w-[290px] xs:h-[250px]  lg:w-full  lg:h-[350px] xs:p-10 lg:p-0 rounded-lg
             text-center bg-gradient-to-r from-[#f24e3f]/15 via-gray-900/30 to-black/90"
             >
-              <h3 className="w-[80%]">
+              <h3 className="xs:text-xs lg:w-[80%]">
                 Buildess enables us not only to optimize productivity through
                 the use of advanced technology but also to ensure our safety at
                 all times.
@@ -92,10 +92,10 @@ const MainContent = () => {
             <div
               className="
             flex flex-col justify-center items-center
-            text-white text-2xl font-bitcount-regular w-full rounded-lg h-[350px]
+            text-white text-2xl font-bitcount-regular xs:w-[290px] xs:h-[250px]  lg:w-full  lg:h-[350px] rounded-lg
             text-center bg-gradient-to-r from-[#f24e3f]/15 via-gray-900/30 to-black/90"
             >
-              <h3 className="w-[80%]">
+              <h3 className="xs:text-xs lg:w-[80%]">
                 Buildess' value lies in empowering developers, including those
                 with little development experience, to excel by alleviating the
                 burden of repetitive tasks.
